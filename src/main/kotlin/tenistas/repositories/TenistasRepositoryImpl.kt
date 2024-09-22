@@ -79,20 +79,44 @@ class TenistasRepositoryImpl(
      * Obtiene a un tenista por su id
      * @param id: Long
      * @return Tenista? - Tenista encontrado o null si no existe
-     * @author Javier Hernández
+     * @author Samuel Cortés
      * @since 1.0
      */
 
     override fun getTenistaById(id: Long): Tenista? {
         looger.debug { "Obteniendo el Tenista con id: $id" }
-        return db.selectById(id).executeAsOneOrNull()?.toTenista()
+        val sql = "SELECT * FROM tenistas WHERE id = $id"
+        var tenista : Tenista? = null
+        try {
+            connection.prepareStatement(sql).use { statement ->
+                statement.setInt(1,id.toInt())
+                val resultSet = statement.executeQuery()
+                if (resultSet.next()){
+                    tenista = Tenista(
+                        resultSet.getLong("id"),
+                        resultSet.getString("nombre"),
+                        resultSet.getString("pais"),
+                        resultSet.getInt("altura"),
+                        resultSet.getInt("peso"),
+                        resultSet.getInt("puntos"),
+                        resultSet.getString("manos"),
+                        fecha_nacimiento = LocalDate.parse(resultSet.getString("fecha_nacimiento")),
+                        createdAt = LocalDateTime.parse(resultSet.getString("created_at")),
+                        updatedAt = LocalDateTime.parse(resultSet.getString("updated_at")),
+                    )
+                }
+            }
+        }catch (e: SQLException){
+            logger.error { "Error al obtener el Tenista: ${e.message}" }
+        }
+        return tenista
     }
 
     /**
      * Obtiene a un tenista por su nombre
      * @param nombre: String
      * @return Tenista? - Tenista encontrado o null si no existe
-     * @author Javier Hernández
+     * @author Alvaro Herrero
      * @since 1.0
      */
     override fun getTenistaByName(nombre: String): Tenista? {
@@ -129,7 +153,7 @@ class TenistasRepositoryImpl(
      * Guarda un nuevo tenista en la base de datos
      * @param tenista: Tenista
      * @return Tenista - Tenista guardado en la base de datos con su id asignado
-     * @author Javier Hernández
+     * @author Yahya El Hadri
      * @since 1.0
      */
     override fun saveTenista(tenista: Tenista): Tenista {
@@ -155,25 +179,32 @@ class TenistasRepositoryImpl(
      * @param tenista: Tenista
      * @return Tenista? - Tenista actualizado o null si no existe el tenista con el id proporcionado
      * @since 1.0
-     * @author Javier Hernández
+     * @author Javier Ruiz
      */
     override fun updateTenista(tenista: Tenista): Tenista? {
         looger.debug { "Actualizando el Tenista con id: ${tenista.id}" }
-        var result = this.getTenistaById(tenista.id)?: return null
-        db.updateTenista(
-            id = tenista.id,
-            nombre = tenista.nombre,
-            pais = tenista.pais,
-            altura = tenista.altura.toLong(),
-            peso = tenista.peso.toLong(),
-            puntos = tenista.puntos.toLong(),
-            mano = tenista.mano,
-            fecha_nacimiento = tenista.fecha_nacimiento.toString(),
-            upadated_at = tenista.updatedAt.toString(),
-        )
-        logger.debug { "Tenista actualizado correctamente: ${tenista.nombre}" }
-        result = this.getTenistaById(tenista.id)!!
-        return result
+        val sql = "UPDATE tenistas SET nombre=?, pais=?, altura=?, peso=?, puntos=?, mano=?,fecha_nacimiento=?,updated_at=? WHERE id=? "
+        try {
+            connection.createStatement().use { statement ->
+                statement.executeQuery(sql).use { resultSet ->
+                    resultSet.getLong("id")
+                    resultSet.getString("nombre")
+                    resultSet.getString("pais")
+                    resultSet.getInt("altura")
+                    resultSet.getInt("peso")
+                    resultSet.getInt("puntos")
+                    resultSet.getString("manos")
+                    tenista.fecha_nacimiento = LocalDate.parse(resultSet.getString("fecha_nacimiento"))
+                    tenista.createdAt = LocalDateTime.parse(resultSet.getString("created_at"))
+                    tenista.updatedAt = LocalDateTime.parse(resultSet.getString("updated_at"))
+
+                    }
+                }
+        }catch (e: SQLException){
+            looger.error { "Error al obtener los Tenistas: ${e.message}" }
+            e.printStackTrace()
+        }
+        return tenista
     }
 
     /**

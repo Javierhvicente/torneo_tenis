@@ -1,10 +1,8 @@
 package tenistas.repositories
 
 import database.DatabaseConnection
-import org.junit.jupiter.api.BeforeEach
-import org.junit.jupiter.api.Test
-import org.junit.jupiter.api.TestInstance
-import org.junit.jupiter.api.assertAll
+import org.junit.jupiter.api.*
+import org.junit.jupiter.api.Assertions.*
 import tenistas.models.Tenista
 import java.time.LocalDate
 import java.time.LocalDateTime
@@ -30,6 +28,28 @@ class TenistaRepositoryImplTest {
             {assert(result[0].nombre == "Rafael Nadal")},
             { assertEquals(UUID.fromString("004c5d50-30a3-4416-a9c4-209b63d8f78c"), result[0].id) }
         )
+    }
+
+    @Test
+    fun getTenistaByName() {
+        //arrange
+        //act
+        repository.saveTenista(Nadal)
+        val tenista = repository.getTenistaByName("Rafael Nadal")
+        //assert
+        assertNotNull(tenista)
+        assertEquals(Nadal, tenista)
+    }
+
+    @Test
+    fun getTenistaByNameNotFound() {
+        //arrange
+        //act
+        repository.saveTenista(Nadal)
+        val tenista = repository.getTenistaByName("Rafael Nad")
+        //assert
+        assertNull(tenista)
+        assertNotEquals(Nadal, tenista)
     }
 
 }

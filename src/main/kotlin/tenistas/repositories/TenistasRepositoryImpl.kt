@@ -90,7 +90,7 @@ class TenistasRepositoryImpl(
      */
 
     override fun getTenistaById(id: UUID): Tenista? {
-        looger.debug { "Obteniendo el Tenista con id: $id" }
+        logger.debug { "Obteniendo el Tenista con id: $id" }
         val sql = "SELECT * FROM tenistas WHERE id = ?"
 
         return databaseConnection.useConnection { connection ->
@@ -171,7 +171,8 @@ class TenistasRepositoryImpl(
      */
     override fun saveTenista(tenista: Tenista): Tenista {
         tenistas.repositories.logger.debug { "Creando un nuevo Tenista con nombre: ${tenista.nombre}" }
-        val sql = "INSERT INTO tenistas (id, nombre, pais, altura, peso, puntos, mano, fecha_nacimiento, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+        val sql =
+            "INSERT INTO tenistas (id, nombre, pais, altura, peso, puntos, mano, fecha_nacimiento, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
         databaseConnection.useConnection { connection ->
             try {
                 connection.prepareStatement(sql).use { statement ->
@@ -248,10 +249,30 @@ class TenistasRepositoryImpl(
      * @since 1.0
      * @author Raúl Fernández
      */
-    override fun deleteById(id: UUID): Tenista? {
-        looger.debug { "Eliminando el Tenista con id: $id" }
-        val result = this.getTenistaById(id) ?: return null
-        db.deleteById(id)
-        return result
+    override fun deleteById(id: UUID): Boolean? {
+        logger.debug { "Eliminando el Tenista con id: $id" }
+        val sql = "DELETE FROM tenistas WHERE id = ?"
+
+        return databaseConnection.useConnection { connection ->
+            try {
+                connection.prepareStatement(sql).use { statement ->
+                    statement.setString(1, id.toString())
+
+                    val rowsAffected = statement.executeUpdate()
+
+                    if (rowsAffected > 0) {
+                        logger.debug { "Tenista con id: $id eliminado correctamente." }
+                        true // Devuelve true si se eliminó el tenista
+                    } else {
+                        logger.warn { "No se encontró el Tenista con id: $id para eliminar." }
+                        false // Devuelve false si no se encontró el tenista
+                    }
+                }
+            } catch (e: SQLException) {
+                logger.error { "Error al eliminar el Tenista: ${e.message}" }
+                e.printStackTrace()
+                false
+            }
+        }
     }
 }

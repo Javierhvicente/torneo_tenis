@@ -9,5 +9,5 @@ interface TenistasRepository {
     fun getTenistaByName(nombre: String): Tenista?
     fun saveTenista(tenista: Tenista): Tenista
     fun updateTenista(tenista: Tenista): Tenista?
-    fun deleteById(id: UUID): Tenista?
+    fun deleteById(id: UUID): Boolean?
 }

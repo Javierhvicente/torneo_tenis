@@ -4,22 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22d0c19b-6bf1-4399-a3ae-2b524f675b5a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/logs/torneo_tenis.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/torneo_tenis.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/tenistas/cache/CacheTenistasImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tenistas/cache/CacheTenistasImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/cache/CacheImplTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/cache/CacheImplTests.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/tenistas/repositories/TenistaRepositoryImplTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/tenistas/repositories/TenistaRepositoryImplTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/torneo_tenis.db" beforeDir="false" afterPath="$PROJECT_DIR$/torneo_tenis.db" afterDir="false" />
+    <list default="true" id="425fee2f-e71f-4295-9a3f-b35ce5b425b1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/torneo_tenis.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/torneo_tenis.db" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="ExternalProjectsData">
-    <projectState path="$PROJECT_DIR$">
-      <ProjectState />
-    </projectState>
   </component>
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
@@ -34,203 +27,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 5
-}</component>
-  <component name="ProjectId" id="2mT4AXhm2bgULb8MyWCDN1PtPSa" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Gradle.CacheTenistasImplTest.executor": "Run",
-    "Gradle.CacheTenistasImplTest.getNotFound.executor": "Run",
-    "Gradle.TenistaRepositoryImplTest.executor": "Run",
-    "Gradle.TenistaRepositoryImplTest.getAllTenistas.executor": "Run",
-    "Gradle.TenistaRepositoryImplTest.getTenistaByName.executor": "Run",
-    "Gradle.TenistaRepositoryImplTest.getTenistaByNameNotFound.executor": "Coverage",
-    "Gradle.TenistasServiceImplTest.createTenista.executor": "Run",
-    "Gradle.TenistasServiceImplTest.executor": "Run",
-    "Gradle.TenistasServiceImplTest.getTenistaByIdInCahe.executor": "Run",
-    "Gradle.TenistasServiceImplTest.getTenistaByIdInRepo.executor": "Run",
-    "Gradle.TenistasServiceImplTest.getTenistaByIdNotFound.executor": "Run",
-    "Gradle.TenistasServiceImplTest.getTenistaByNombreInRepo.executor": "Run",
-    "Gradle.TenistasServiceImplTest.getTenistaByNombreNotFound.executor": "Run",
-    "Gradle.Tests in 'torneo_tenis.test'.executor": "Coverage",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.codeium.enabled": "true",
-    "git-widget-placeholder": "develop",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/alvaro/IdeaProjects/torneo_tenis",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+    "git-widget-placeholder": "develop"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.Tests in 'torneo_tenis.test'">
-    <configuration name="CacheTenistasImplTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;cache.CacheTenistasImplTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="CacheTenistasImplTest.getNotFound" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;cache.CacheTenistasImplTest.getNotFound&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="TenistaRepositoryImplTest.getTenistaByNameNotFound" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tenistas.repositories.TenistaRepositoryImplTest.getTenistaByNameNotFound&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="TenistasServiceImplTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tenistas.service.TenistasServiceImplTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="Tests in 'torneo_tenis.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Gradle.Tests in 'torneo_tenis.test'" />
-        <item itemvalue="Gradle.TenistaRepositoryImplTest.getTenistaByNameNotFound" />
-        <item itemvalue="Gradle.CacheTenistasImplTest.getNotFound" />
-        <item itemvalue="Gradle.CacheTenistasImplTest" />
-        <item itemvalue="Gradle.TenistasServiceImplTest" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
-        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
-      </set>
-    </attachedChunks>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="22d0c19b-6bf1-4399-a3ae-2b524f675b5a" name="Changes" comment="" />
-      <created>1727087090759</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1727087090759</updated>
-      <workItem from="1727087093955" duration="47000" />
-      <workItem from="1727132792182" duration="1000" />
-      <workItem from="1727132836509" duration="88000" />
-      <workItem from="1727132965601" duration="75000" />
-      <workItem from="1727133051392" duration="3000" />
-      <workItem from="1727133487243" duration="747000" />
-      <workItem from="1727164486618" duration="132000" />
-      <workItem from="1727165252768" duration="3069000" />
-      <workItem from="1727168931312" duration="2227000" />
-    </task>
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/torneo_tenis$TenistaRepositoryImplTest_getTenistaByNameNotFound.ic" NAME="TenistaRepositoryImplTest.getTenistaByNameNotFound Coverage Results" MODIFIED="1727171089721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/torneo_tenis$Tests_in__torneo_tenis_test_.ic" NAME="Tests in 'torneo_tenis.test' Coverage Results" MODIFIED="1727171106348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

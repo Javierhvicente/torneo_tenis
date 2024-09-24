@@ -43,3 +43,15 @@
 2024-09-24 11:25:57 [Test worker] ERROR t.service.TenistasServiceImplKt - Error loading tenistas from file: data\data.csv
 2024-09-24 11:34:52 [Test worker] ERROR t.r.TenistasRepositoryImplKt - Error al guardar el Tenista: [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: tenistas.id)
 2024-09-24 11:34:54 [Test worker] ERROR t.service.TenistasServiceImplKt - Error loading tenistas from file: data\data.csv
+2024-09-24 11:39:32 [Test worker] ERROR t.r.TenistasRepositoryImplKt - Error al guardar el Tenista: [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: tenistas.id)
+2024-09-24 11:39:34 [Test worker] ERROR t.service.TenistasServiceImplKt - Error loading tenistas from file: data\data.csv
+2024-09-24 11:41:54 [Test worker] ERROR t.r.TenistasRepositoryImplKt - Error al guardar el Tenista: [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: tenistas.id)
+2024-09-24 11:41:56 [Test worker] ERROR t.service.TenistasServiceImplKt - Error loading tenistas from file: data\data.csv
+2024-09-24 11:42:01 [Test worker] ERROR t.r.TenistasRepositoryImplKt - Error al guardar el Tenista: [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: tenistas.id)
+2024-09-24 11:42:04 [Test worker] ERROR t.service.TenistasServiceImplKt - Error loading tenistas from file: data\data.csv
+2024-09-24 11:44:46 [Test worker] ERROR t.r.TenistasRepositoryImplKt - Error al guardar el Tenista: [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: tenistas.id)
+2024-09-24 11:44:51 [Test worker] ERROR t.r.TenistasRepositoryImplKt - Error al guardar el Tenista: [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: tenistas.id)
+2024-09-24 11:45:02 [Test worker] ERROR t.r.TenistasRepositoryImplKt - Error al guardar el Tenista: [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: tenistas.id)
+2024-09-24 11:45:03 [Test worker] ERROR t.service.TenistasServiceImplKt - Error loading tenistas from file: data\data.csv
+2024-09-24 11:45:08 [Test worker] ERROR t.r.TenistasRepositoryImplKt - Error al guardar el Tenista: [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: tenistas.id)
+2024-09-24 11:45:10 [Test worker] ERROR t.service.TenistasServiceImplKt - Error loading tenistas from file: data\data.csv

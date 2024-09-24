@@ -1,13 +1,9 @@
 package tenistas.cache
 
-import com.github.michaelbull.result.Err
-import com.github.michaelbull.result.Ok
-import com.github.michaelbull.result.Result
-import config.Config.cacheSize
-import tenistas.errors.CacheError
 import tenistas.mapper.logger
 import tenistas.models.Tenista
-import java.util.UUID
+import java.util.*
+
 
 /**
  * Cache de almacenamiento de tenistas
@@ -16,7 +12,7 @@ import java.util.UUID
  * @since 1.0
  */
 class CacheTenistasImpl(
-    val size: Int
+    var size: Int
 ): Cache<UUID, Tenista> {
     private val cache = mutableMapOf<UUID, Tenista>()
 
@@ -62,4 +58,9 @@ class CacheTenistasImpl(
         logger.debug { "Limpiando cache" }
         cache.clear()
     }
+
+    fun getCurrentSize(): Int {
+        return cache.size
+    }
+
 }

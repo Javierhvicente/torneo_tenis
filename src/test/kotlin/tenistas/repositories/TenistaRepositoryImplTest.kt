@@ -78,7 +78,7 @@ class TenistaRepositoryImplTest {
         //arrange
         //act
         repository.saveTenista(Nadal)
-        val tenista = repository.getTenistaByName("Rafael Nad")
+        val tenista = repository.getTenistaByName("Ra")
         //assert
         assertNull(tenista)
         assertNotEquals(Nadal, tenista)

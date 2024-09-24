@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22d0c19b-6bf1-4399-a3ae-2b524f675b5a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/torneo_tenis.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/torneo_tenis.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/tenistas/service/TenistasServiceImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tenistas/service/TenistasServiceImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/tenistas/service/TenistasServiceImplTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/tenistas/service/TenistasServiceImplTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/tenistas/cache/CacheTenistasImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tenistas/cache/CacheTenistasImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/cache/CacheImplTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/cache/CacheImplTests.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/tenistas/repositories/TenistaRepositoryImplTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/tenistas/repositories/TenistaRepositoryImplTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/torneo_tenis.db" beforeDir="false" afterPath="$PROJECT_DIR$/torneo_tenis.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,9 +45,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.CacheTenistasImplTest.executor": "Run",
+    "Gradle.CacheTenistasImplTest.getNotFound.executor": "Run",
     "Gradle.TenistaRepositoryImplTest.executor": "Run",
     "Gradle.TenistaRepositoryImplTest.getAllTenistas.executor": "Run",
     "Gradle.TenistaRepositoryImplTest.getTenistaByName.executor": "Run",
+    "Gradle.TenistaRepositoryImplTest.getTenistaByNameNotFound.executor": "Coverage",
     "Gradle.TenistasServiceImplTest.createTenista.executor": "Run",
     "Gradle.TenistasServiceImplTest.executor": "Run",
     "Gradle.TenistasServiceImplTest.getTenistaByIdInCahe.executor": "Run",
@@ -55,7 +58,7 @@
     "Gradle.TenistasServiceImplTest.getTenistaByIdNotFound.executor": "Run",
     "Gradle.TenistasServiceImplTest.getTenistaByNombreInRepo.executor": "Run",
     "Gradle.TenistasServiceImplTest.getTenistaByNombreNotFound.executor": "Run",
-    "Gradle.Tests in 'torneo_tenis.test'.executor": "Run",
+    "Gradle.Tests in 'torneo_tenis.test'.executor": "Coverage",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.codeium.enabled": "true",
@@ -71,6 +74,78 @@
   }
 }]]></component>
   <component name="RunManager" selected="Gradle.Tests in 'torneo_tenis.test'">
+    <configuration name="CacheTenistasImplTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;cache.CacheTenistasImplTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CacheTenistasImplTest.getNotFound" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;cache.CacheTenistasImplTest.getNotFound&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="TenistaRepositoryImplTest.getTenistaByNameNotFound" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tenistas.repositories.TenistaRepositoryImplTest.getTenistaByNameNotFound&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="TenistasServiceImplTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -85,78 +160,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;tenistas.service.TenistasServiceImplTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="TenistasServiceImplTest.createTenista" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tenistas.service.TenistasServiceImplTest.createTenista&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="TenistasServiceImplTest.getTenistaByNombreInRepo" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tenistas.service.TenistasServiceImplTest.getTenistaByNombreInRepo&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="TenistasServiceImplTest.getTenistaByNombreNotFound" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tenistas.service.TenistasServiceImplTest.getTenistaByNombreNotFound&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -192,10 +195,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Tests in 'torneo_tenis.test'" />
+        <item itemvalue="Gradle.TenistaRepositoryImplTest.getTenistaByNameNotFound" />
+        <item itemvalue="Gradle.CacheTenistasImplTest.getNotFound" />
+        <item itemvalue="Gradle.CacheTenistasImplTest" />
         <item itemvalue="Gradle.TenistasServiceImplTest" />
-        <item itemvalue="Gradle.TenistasServiceImplTest.createTenista" />
-        <item itemvalue="Gradle.TenistasServiceImplTest.getTenistaByNombreNotFound" />
-        <item itemvalue="Gradle.TenistasServiceImplTest.getTenistaByNombreInRepo" />
       </list>
     </recent_temporary>
   </component>
@@ -223,7 +226,7 @@
       <workItem from="1727133487243" duration="747000" />
       <workItem from="1727164486618" duration="132000" />
       <workItem from="1727165252768" duration="3069000" />
-      <workItem from="1727168931312" duration="1550000" />
+      <workItem from="1727168931312" duration="2227000" />
     </task>
     <servers />
   </component>
